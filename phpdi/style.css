@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #0fd850; /* Color de letra brillante */
+    background: linear-gradient(45deg, #000000, #333333), repeating-radial-gradient(circle at 10% 20%, #ffffff, #000000 5%);
+    background-size: cover, 800px 800px;
+    animation: BackgroundAnimation 30s ease infinite, SparkleAnimation 1.5s linear infinite;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes BackgroundAnimation {
+    0%, 100% {
+        background-color: #000;
+    }
+    50% {
+        background-color: #333;
+    }
+}
+
+@keyframes SparkleAnimation {
+    0%, 100% {
+        background-position: 0px 0px, 0 0;
+    }
+    50% {
+        background-position: 800px 800px, 0 0;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    color: #ff8c00; /* Color de encabezado brillante */
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+input[type="text"], input[type="submit"] {
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Botón verde */
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #00ff00; /* Color de texto para la tabla */
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #555;
+}
+
+tr:hover {
+    background-color: #666;
+}
